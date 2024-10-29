@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wellcome View Controler-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WellcomeViewControler" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="QOF-In-Bfh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PixelWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-yf-axv">
+                                <rect key="frame" x="81" y="131" width="231" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="iQl-Lx-Y4S"/>
+                                    <constraint firstAttribute="width" constant="231" id="rja-wP-m9T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="45"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FfR-O9-LLX">
+                                <rect key="frame" x="77.666666666666686" y="71" width="238" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="0h6-s3-ZYy"/>
+                                    <constraint firstAttribute="height" constant="94" id="scx-9E-xVQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wy-v3-1FN" customClass="CustomButton" customModule="PixelWorld" customModuleProvider="target">
+                                <rect key="frame" x="119" y="666" width="155" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="0d4-4Z-XwT"/>
+                                    <constraint firstAttribute="width" constant="154.5" id="Zm0-yQ-TcE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Choose Fation">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" red="0.41019534079999997" green="0.41019534079999997" blue="0.41019534079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="aFq-qk-h5l" kind="show" id="BEG-Ss-4y8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FfR-O9-LLX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="127" id="5xY-LE-BEr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0wy-v3-1FN" secondAttribute="bottom" constant="118" id="E6Y-Bh-dnT"/>
+                            <constraint firstItem="QOF-In-Bfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PS9-j2-jOt"/>
+                            <constraint firstItem="QOF-In-Bfh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SHB-au-nhZ"/>
+                            <constraint firstItem="QOF-In-Bfh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WtL-9P-H33"/>
+                            <constraint firstItem="wYF-yf-axv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWU-Vu-usq"/>
+                            <constraint firstItem="0wy-v3-1FN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cev-XY-BmE"/>
+                            <constraint firstAttribute="bottom" secondItem="QOF-In-Bfh" secondAttribute="bottom" id="gCM-3i-a5j"/>
+                            <constraint firstItem="wYF-yf-axv" firstAttribute="bottom" secondItem="FfR-O9-LLX" secondAttribute="bottom" constant="50" id="kAj-Mq-vkG"/>
+                            <constraint firstItem="FfR-O9-LLX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="nRC-oC-re5"/>
+                            <constraint firstItem="FfR-O9-LLX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u6t-ej-Tac"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.358778625954194" y="-2.8169014084507045"/>
+        </scene>
+        <!--Choose Fastion View Ctroler-->
+        <scene sceneID="BEj-Xo-G3r">
+            <objects>
+                <viewController id="aFq-qk-h5l" customClass="ChooseFastionViewCtroler" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uSr-qt-U3u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_character_faction_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-3d-Llx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aoD-1K-SHg">
+                                <rect key="frame" x="20" y="187" width="353" height="168"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magicion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1c-6q-jJj">
+                                        <rect key="frame" x="79.000000000000014" y="0.0" width="195.33333333333337" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="YuO-5f-fAl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-zT-Eyu">
+                                        <rect key="frame" x="109.00000000000001" y="84" width="135.33333333333337" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="pWe-Uz-cIc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="45"/>
+                                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6n-w7-PP1" customClass="CustomButton" customModule="PixelWorld" customModuleProvider="target">
+                                <rect key="frame" x="119.33333333333333" y="677" width="154.33333333333337" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Cc8-b7-920"/>
+                                    <constraint firstAttribute="width" constant="154.5" id="EL5-1h-B3C"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Star Game">
+                                    <backgroundConfiguration key="background" cornerRadius="10">
+                                        <color key="backgroundColor" red="0.41019534079999997" green="0.41019534079999997" blue="0.41019534079999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="21"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onStarGamePressed:" destination="aFq-qk-h5l" eventType="touchUpInside" id="bsj-gA-2X1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfy-qd-LLL">
+                                <rect key="frame" x="7" y="0.0" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3Rq-w9-91x" kind="unwind" unwindAction="fromChooseFactionWithSegue:" id="vi6-JQ-j7R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M8S-Z5-ARt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VoG-3d-Llx" secondAttribute="bottom" id="0Gi-Db-7PE"/>
+                            <constraint firstItem="aoD-1K-SHg" firstAttribute="leading" secondItem="M8S-Z5-ARt" secondAttribute="leading" constant="20" id="0zz-TJ-RUN"/>
+                            <constraint firstItem="M8S-Z5-ARt" firstAttribute="trailing" secondItem="aoD-1K-SHg" secondAttribute="trailing" constant="20" id="8Wx-rj-zpv"/>
+                            <constraint firstItem="VoG-3d-Llx" firstAttribute="top" secondItem="uSr-qt-U3u" secondAttribute="top" id="DOr-74-PJY"/>
+                            <constraint firstItem="M8S-Z5-ARt" firstAttribute="bottom" secondItem="Z6n-w7-PP1" secondAttribute="bottom" constant="30" id="GJR-lm-hhL"/>
+                            <constraint firstItem="Z6n-w7-PP1" firstAttribute="centerX" secondItem="uSr-qt-U3u" secondAttribute="centerX" id="NLu-eZ-ZK0"/>
+                            <constraint firstItem="VoG-3d-Llx" firstAttribute="trailing" secondItem="M8S-Z5-ARt" secondAttribute="trailing" id="NSG-pL-rug"/>
+                            <constraint firstItem="aoD-1K-SHg" firstAttribute="top" secondItem="M8S-Z5-ARt" secondAttribute="top" constant="128" id="ScO-Xv-mjg"/>
+                            <constraint firstItem="VoG-3d-Llx" firstAttribute="leading" secondItem="M8S-Z5-ARt" secondAttribute="leading" id="xgI-nv-8WE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0tJ-75-WmN"/>
+                    <connections>
+                        <outlet property="ArmorLable" destination="i2k-zT-Eyu" id="M1C-Ex-bsb"/>
+                        <outlet property="StarGameBtn" destination="Z6n-w7-PP1" id="9hM-ud-pLO"/>
+                        <outlet property="magicionLable" destination="s1c-6q-jJj" id="esm-jP-VmW"/>
+                        <segue destination="Dmv-Wj-cz1" kind="show" identifier="InGamePressed" id="ddK-2i-hbB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ZQ-d4-oyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3Rq-w9-91x" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="-3"/>
+        </scene>
+        <!--In Game View Controller-->
+        <scene sceneID="gSe-2Y-xMW">
+            <objects>
+                <viewController id="Dmv-Wj-cz1" customClass="InGameViewController" customModule="PixelWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6TI-t4-s4B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TRE-cV-H3C">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sMy-CY-JUZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TRE-cV-H3C" firstAttribute="top" secondItem="6TI-t4-s4B" secondAttribute="top" id="8Xm-Bg-Y0H"/>
+                            <constraint firstItem="TRE-cV-H3C" firstAttribute="leading" secondItem="sMy-CY-JUZ" secondAttribute="leading" id="S65-YU-tQz"/>
+                            <constraint firstItem="TRE-cV-H3C" firstAttribute="trailing" secondItem="sMy-CY-JUZ" secondAttribute="trailing" id="atV-tj-bQl"/>
+                            <constraint firstAttribute="bottom" secondItem="TRE-cV-H3C" secondAttribute="bottom" id="gfH-zl-wYh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sbv-se-lvX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqd-lw-mR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690.8396946564885" y="-2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="640" height="640"/>
+        <image name="select_character_faction_bg" width="133.66667175292969" height="238.33332824707031"/>
+        <image name="welcome_bg" width="164.33332824707031" height="241.33332824707031"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
